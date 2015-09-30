@@ -1,0 +1,35 @@
+{
+  "name": "nodebb-plugin-limitfmde",
+  "version": "0.0.1",
+  "description": "NodeBB LFM Widgets",
+  "main": "library.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dani2k1/nodebb-plugin-limitfmde"
+  },
+  "keywords": [
+    "nodebb",
+    "widget",
+    "essentials",
+    "markdown",
+    "text"
+  ],
+  "author": {
+    "name": "dani2k1",
+    "email": "rod@limit.fm"
+  },
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/dani2k1/nodebb-plugin-limitfmde/issues"
+  },
+  "readme": "",
+  "readmeFilename": "README.md",
+  "_id": "nodebb-plugin-limitfmde@0.0.1",
+  "_from": "nodebb-plugin-limitfmde@~0.0.1",
+  "nbbpm": {
+    "compatibility": "^0.7.0 || ^0.8.0"
+  }
+}
