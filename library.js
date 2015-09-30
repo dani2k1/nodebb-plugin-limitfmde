@@ -26,7 +26,7 @@
 		app = params.app;
 
 		var templatesToLoad = [
-			"admin/recentlfmposts.tpl",
+			"admin/recentlfmcards.tpl",
 			];
 
 		function loadTemplate(template, next) {
@@ -58,7 +58,7 @@
 				cid: cid,
 				relative_path: nconf.get('relative_path')
 			};
-			app.render('widgets/recentlfmposts', data, function(err, html) {
+			app.render('widgets/recentlfmcards', data, function(err, html) {
 				translator.translate(html, function(translatedHTML) {
 					callback(err, translatedHTML);
 				});
@@ -82,7 +82,7 @@
 				widget: "recentlfm",
 				name: "Limit.FM Cards",
 				description: "Show Limit.FM Cards.",
-				content: Widget.templates['admin/recentlfmposts.tpl']
+				content: Widget.templates['admin/recentlfmcards.tpl']
 			}		]);
 
 		callback(null, widgets);
