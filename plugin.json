@@ -13,7 +13,7 @@
 		},
 		{
 			"hook": "filter:widget.render:recentlfm", "method": "renderLfmCards"
-		},
+		}
 	],
 	"templates": "./public/templates",
 	"css": [
