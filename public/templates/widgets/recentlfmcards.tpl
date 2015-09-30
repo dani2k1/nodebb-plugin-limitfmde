@@ -1,7 +1,5 @@
-<div class="recent-replies">
-	<ul id="recent_posts" data-numposts="{numPosts}" data-cid="{cid}">
-	<!-- IMPORT partials/posts.tpl -->
-	</ul>
+<div class="categories row <!-- IF !config.removeCategoriesAnimation --> display-animation<!-- ENDIF !config.removeCategoriesAnimation -->">
+	<!-- IMPORT partials/cards.tpl -->
 </div>
 
 <script>
@@ -58,7 +56,7 @@ $(document).ready(function() {
 	function processHtml(html) {
 		app.replaceSelfLinks(html.find('a'));
 
-		html.find('img:not(.not-responsive)').addClass('img-responsive');
+		html.find('img').addClass('img-responsive');
 		html.find('span.timeago').timeago();
 	}
 });
