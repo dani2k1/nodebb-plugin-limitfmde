@@ -1,0 +1,23 @@
+{
+	"id": "nodebb-plugin-limitfmde",
+	"name": "NodeBB LFM Widgets",
+	"description": "LFM basic widgets",
+	"url": "https://github.com/dani2k1/nodebb-plugin-limitfmde",
+	"library": "./library.js",
+	"hooks": [
+		{
+			"hook": "static:app.load", "method": "init"
+		},
+		{
+			"hook": "filter:widgets.getWidgets", "method": "defineWidgets"
+		},
+		{
+			"hook": "filter:widget.render:recentlfm", "method": "renderLfmCards"
+		},
+	],
+	"templates": "./public/templates",
+	"css": [
+    	"public/css/widget.css"
+    ],
+    "compatibility": "^0.5.0 || ^0.6.0 || ^0.7.0 || ^0.8.0"
+}

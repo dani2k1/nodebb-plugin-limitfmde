@@ -1,2 +1,5 @@
-# nodebb-plugin-limitfmde
-LFM
+# NodeBB LFM
+
+LFM Widgets
+
+  
